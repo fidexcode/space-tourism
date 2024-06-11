@@ -6,7 +6,7 @@ import Crew from "./Component/pages/Crew";
 import Technology from "./Component/pages/Technology";
 function App() {
   return (
-    <div className="">
+    <div className="app">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/destination" element={<Destination />} />

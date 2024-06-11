@@ -1,53 +1,31 @@
 import React from "react";
-import { useState } from "react";
 import { Link } from "react-router-dom";
-import menubars from "../assets/shared/icon-hamburger.svg";
 import logo from "../assets/shared/logo.svg";
-import close from "../assets/shared/icon-close.svg";
-const Navbar = () => {
-  const [openmenu, setOpenmenu] = useState(false);
-  const showMenu = () => {
-    setOpenmenu(!openmenu);
-  };
-  const closeMenu = () => {
-    setOpenmenu(!openmenu);
-  };
+
+function Navbar() {
   return (
-    <div className=" text-white">
-      <div className="flex justify-between items-center">
-        <div>
-          <img src={logo} alt="logo" className="w-12" />
+    <div className="text-white hidden sm:flex">
+      <div className="flex items-center justify-between w-full overflow-hidden ">
+        <div className="ml-6">
+          <img src={logo} alt="logo" />
         </div>
-        <div>
-          <img src={menubars} alt="menubars" onClick={showMenu} />
-        </div>
-      </div>
-      <nav
-        className={`${openmenu ? "w-[254px]" : "w-0 hidden"} bg-[#0b0217] h-screen absolute right-0 top-0 p-6`}
-      >
-        <img
-          src={close}
-          alt="close"
-          onClick={closeMenu}
-          className="absolute right-6 top-10"
-        />
-        <div className="mt-32 ml-4 ">
-          <Link className="mb-6 text-xl font-bold block" to="/">
-            00 HOME
+        <nav className="bg-[#0b0217] w-[640px] h-[96px] flex items-center justify-center p-6">
+          <Link className="text-2xl mr-10" to="/">
+            HOME
           </Link>
-          <Link className="mb-6 text-xl font-bold block" to="/destination">
-            01 DESTINATION
+          <Link className="text-2xl mr-10" to="/destination">
+            02 DESTINATION
           </Link>
-          <Link className="mb-6 text-xl font-bold block" to="/crew">
+          <Link className="text-2xl mr-10" to="/crew">
             02 CREW
           </Link>
-          <Link className="mb-6 text-xl font-bold block" to="/technology">
+          <Link className="text-2xl mr-10" to="/technology">
             03 TECHNOLOGY
           </Link>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </div>
   );
-};
+}
 
 export default Navbar;

@@ -1,14 +1,11 @@
 import React from "react";
-
-import bgImage from "/src/assets/home/background-home-mobile.jpg";
+import Sidebar from "../Sidebar";
 import Navbar from "../Navbar";
 
 function Home() {
   return (
-    <div
-      style={{ backgroundImage: `url(${bgImage})` }}
-      className="w-full h-screen bg-cover bg-center p-6"
-    >
+    <div className="home w-full h-screen bg-cover bg-center p-6 sm:p-0">
+      <Sidebar />
       <Navbar />
     </div>
   );
