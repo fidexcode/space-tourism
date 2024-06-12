@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import menubars from "../assets/shared/icon-hamburger.svg";
 import logo from "../assets/shared/logo.svg";
 import close from "../assets/shared/icon-close.svg";
-const Navbar = () => {
+const Sidebar = () => {
   const [openmenu, setOpenmenu] = useState(false);
   const showMenu = () => {
     setOpenmenu(!openmenu);
@@ -23,7 +23,7 @@ const Navbar = () => {
         </div>
       </div>
       <nav
-        className={`${openmenu ? "w-[254px]" : "w-0 hidden"} bg-[#0b0217] h-screen absolute right-0 top-0 p-6`}
+        className={`${openmenu ? "w-[254px]" : "w-0 hidden"} bg-[#0b0217] h-screen absolute z-10 right-0 top-0 p-6`}
       >
         <img
           src={close}
@@ -50,4 +50,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Sidebar;
