@@ -1,17 +1,18 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Home from "./Component/pages/Home";
-import Destination from "./Component/pages/Destination";
-import Crew from "./Component/pages/Crew";
-import Technology from "./Component/pages/Technology";
+import Home from "./Component/Home";
+import Destinationlist from "./Component/Destination/Destinationlist";
+import Crewlist from "./Component/crew/Crewlist";
+import Technologylist from "./Component/Technology/Technologylist";
+
 function App() {
   return (
     <div className="app">
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/destination" element={<Destination />} />
-        <Route path="/crew" element={<Crew />} />
-        <Route path="/technology" element={<Technology />} />
+        <Route path="/destination" element={<Destinationlist />} />
+        <Route path="/crew" element={<Crewlist />} />
+        <Route path="/technology" element={<Technologylist />} />
       </Routes>
     </div>
   );

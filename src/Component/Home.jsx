@@ -1,10 +1,10 @@
 import React from "react";
-import Sidebar from "../Sidebar";
-import Navbar from "../Navbar";
+import Sidebar from "./Sidebar";
+import Navbar from "./Navbar";
 
 function Home() {
   return (
-    <div className="home w-full h-screen bg-cover bg-center p-6 sm:p-0">
+    <div className="home bg-[#0b0217] w-full h-screen bg-cover bg-center p-6 sm:p-0">
       <Sidebar />
       <Navbar />
       <div className="lg:flex justify-center items-center lg:gap-[120px] mt-16 lg:mt-32 grid">
