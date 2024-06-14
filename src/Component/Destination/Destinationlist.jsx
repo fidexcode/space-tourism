@@ -24,25 +24,41 @@ const Destinationlist = () => {
           <div className="flex gap-x-4 absolute mt-[220px] m-auto">
             <button
               onClick={() => handleclick("moon")}
-              className={selectedspace === "moon" ? "text-red-500" : ""}
+              className={
+                selectedspace === "moon"
+                  ? "text-white border-b-2 border-white"
+                  : ""
+              }
             >
               MOON
             </button>
             <button
               onClick={() => handleclick("mars")}
-              className={selectedspace === "mars" ? "text-red-500" : ""}
+              className={
+                selectedspace === "mars"
+                  ? "text-white border-b-2 border-white"
+                  : ""
+              }
             >
               MARS
             </button>
             <button
               onClick={() => handleclick("europa")}
-              className={selectedspace === "europa" ? "text-red-500" : ""}
+              className={
+                selectedspace === "europa"
+                  ? "text-white border-b-2 border-white"
+                  : ""
+              }
             >
               EUROPA
             </button>
             <button
               onClick={() => handleclick("titan")}
-              className={selectedspace === "titan" ? "text-red-500" : ""}
+              className={
+                selectedspace === "titan"
+                  ? "text-white border-b-2 border-white"
+                  : ""
+              }
             >
               TITAN
             </button>
