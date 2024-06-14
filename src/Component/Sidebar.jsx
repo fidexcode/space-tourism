@@ -13,7 +13,7 @@ const Sidebar = () => {
     setOpenmenu(!openmenu);
   };
   return (
-    <div className=" text-white sm:hidden ">
+    <div className=" text-white sm:hidden">
       <div className="flex justify-between items-center">
         <div>
           <img src={logo} alt="logo" className="w-12" />
