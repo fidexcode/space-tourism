@@ -1,9 +1,9 @@
 import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import menubars from "../assets/shared/icon-hamburger.svg";
-import logo from "../assets/shared/logo.svg";
-import close from "../assets/shared/icon-close.svg";
+import menubars from "/assets/shared/icon-hamburger.svg";
+import logo from "/assets/shared/logo.svg";
+import close from "/assets/shared/icon-close.svg";
 const Sidebar = () => {
   const [openmenu, setOpenmenu] = useState(false);
   const showMenu = () => {

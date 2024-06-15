@@ -20,8 +20,8 @@ function Home() {
             world experience!
           </p>
         </div>
-        <div className="flex justify-center mt-20">
-          <button className="text-[#0b0217] text-center text-[2rem] rounded-full bg-white w-[120px] h-[120px] p-6">
+        <div className="text-center mt-20">
+          <button className="text-[#0b0217] text-center text-[2rem] rounded-full bg-white w-[200px] h-[200px] p-6">
             Explore
           </button>
         </div>

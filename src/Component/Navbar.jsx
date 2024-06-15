@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../assets/shared/logo.svg";
+import logo from "/assets/shared/logo.svg";
 
 function Navbar() {
   return (
