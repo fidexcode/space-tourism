@@ -13,8 +13,8 @@ const Sidebar = () => {
     setOpenmenu(!openmenu);
   };
   return (
-    <div className=" text-white sm:hidden">
-      <div className="flex justify-between items-center">
+    <div className=" text-white sm:hidden ">
+      <div className="flex justify-between items-center p-6">
         <div>
           <img src={logo} alt="logo" className="w-12" />
         </div>
@@ -23,7 +23,7 @@ const Sidebar = () => {
         </div>
       </div>
       <nav
-        className={`${openmenu ? "w-[254px]" : "w-0 hidden"} bg-[#0b0217] h-screen absolute z-10 right-0 top-0 p-6`}
+        className={`${openmenu ? "w-[254px]" : "w-0 hidden"} bg-[#0b0217] h-screen fixed z-10 right-0 top-0 p-6`}
       >
         <img
           src={close}

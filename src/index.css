@@ -25,10 +25,9 @@
   background-image: url("/assets/destination/background-destination-mobile.jpg");
   height: 100%;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 640px) {
   .destination {
     background-image: url("/assets/destination/background-destination-tablet.jpg");
-    height: 100%;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -57,6 +56,7 @@
 
 .technology {
   background-image: url("/assets/technology/background-technology-mobile.jpg");
+  height: 100%;
 }
 @media only screen and (min-width: 768px) {
   .technology {

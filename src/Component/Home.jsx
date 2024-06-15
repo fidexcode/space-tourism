@@ -10,7 +10,7 @@ function Home() {
       <div className="lg:flex justify-around items-center lg:gap-[120px] mt-16 lg:mt-32 grid">
         <div className="text-white text-center lg:text-left xl:w-[540px] lg:mt-12 lg:leading-10 max-w-[512px]">
           <h2 className="text-2xl">So, you want to travel to</h2>
-          <h2 className="text-[5rem] lg:text-[10rem] lg:mt-20 lg:mb-20">
+          <h2 className="text-[5rem] lg:text-[10rem] lg:mt-20 lg:mb-20 text-white">
             SPACE
           </h2>
           <p className="xl:text-xl ">
@@ -21,7 +21,7 @@ function Home() {
           </p>
         </div>
         <div className="text-center mt-20">
-          <button className="text-[#0b0217] text-center text-[2rem] rounded-full bg-white w-[200px] h-[200px] p-6">
+          <button className="text-[#0b0217] text-center text-xl rounded-full bg-white w-[160px] h-[160px] p-6">
             Explore
           </button>
         </div>

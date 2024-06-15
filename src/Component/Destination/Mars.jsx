@@ -8,11 +8,11 @@ function Mars() {
   return (
     <div>
       {marsDestination.map((dest) => (
-        <div key={dest.name} className="grid gap-6">
+        <div key={dest.name} className="grid gap-6 sm:max-w-[450px] m-auto">
           <img
             src={dest.images.png}
             alt="mars"
-            className="w-[130px] m-auto mt-6"
+            className="w-[200px] m-auto mt-6"
           />
           <h2 className="mt-20 text-[5rem] lg:text-[10rem] uppercase text-white">
             {dest.name}
