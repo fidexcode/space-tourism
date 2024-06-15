@@ -1,16 +1,17 @@
 import React from "react";
-import data from "../data.json";
-function Titans() {
-  const titanDestination = data.destinations.filter(
-    (destination) => destination.name === "Titan",
+import data from "./data.json";
+
+function Mars() {
+  const marsDestination = data.destinations.filter(
+    (destination) => destination.name === "Mars",
   );
   return (
     <div>
-      {titanDestination.map((dest) => (
+      {marsDestination.map((dest) => (
         <div key={dest.name} className="grid gap-6">
           <img
             src={dest.images.png}
-            alt="titan"
+            alt="mars"
             className="w-[130px] m-auto mt-6"
           />
           <h2 className="mt-20 text-[5rem] lg:text-[10rem] uppercase text-white">
@@ -20,11 +21,11 @@ function Titans() {
           <hr />
           <div>
             <p>AVG. DISTANCE</p>
-            <p className="text-[2rem] text-white uppercase">{dest.travel}</p>
+            <p className="text-[2rem] text-white uppercase">{dest.distance}</p>
           </div>
           <div>
             <p>EST. TRAVEL TIME</p>
-            <p className="text-[2rem] text-white uppercase">{dest.distance}</p>
+            <p className="text-[2rem] text-white uppercase">{dest.travel}</p>
           </div>
         </div>
       ))}
@@ -32,4 +33,4 @@ function Titans() {
   );
 }
 
-export default Titans;
+export default Mars;

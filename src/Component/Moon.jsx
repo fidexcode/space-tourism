@@ -1,17 +1,17 @@
 import React from "react";
-import data from "../data.json";
+import data from "./data.json";
 
-function Mars() {
-  const marsDestination = data.destinations.filter(
-    (destination) => destination.name === "Mars",
+function Moon() {
+  const moonDestination = data.destinations.filter(
+    (destination) => destination.name === "Moon",
   );
   return (
     <div>
-      {marsDestination.map((dest) => (
+      {moonDestination.map((dest) => (
         <div key={dest.name} className="grid gap-6">
           <img
             src={dest.images.png}
-            alt="mars"
+            alt="moon"
             className="w-[130px] m-auto mt-6"
           />
           <h2 className="mt-20 text-[5rem] lg:text-[10rem] uppercase text-white">
@@ -33,4 +33,4 @@ function Mars() {
   );
 }
 
-export default Mars;
+export default Moon;

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Sidebar from "../Sidebar";
-import Navbar from "../Navbar";
+import Sidebar from "./Sidebar";
+import Navbar from "./Navbar";
 import Moon from "./Moon";
 import Mars from "./Mars";
 import Titans from "./Titans";
